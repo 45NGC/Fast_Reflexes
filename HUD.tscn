@@ -1,0 +1,262 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://fast_assets/fuentes/paladins.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://fast_assets/fuentes/Game Of Squids.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://fast_assets/fuentes/paladinsstraight.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://HUD.gd" type="Script" id=4]
+[ext_resource path="res://fast_assets/fuentes/Calculator.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 75
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 28
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 70
+font_data = ExtResource( 5 )
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 4 )
+
+[node name="TitleLabel" type="Label" parent="."]
+margin_left = 37.0
+margin_top = 22.0
+custom_fonts/font = SubResource( 1 )
+text = "FAST REFLEXES"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Message" type="Label" parent="."]
+margin_left = 430.0
+margin_top = 300.0
+margin_right = 577.0
+margin_bottom = 317.0
+custom_fonts/font = SubResource( 4 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TableModes" type="ColorRect" parent="."]
+margin_left = 600.0
+margin_top = 290.0
+margin_right = 916.0
+margin_bottom = 569.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreyM" type="ColorRect" parent="TableModes"]
+margin_left = 13.0
+margin_top = 9.99902
+margin_right = 304.0
+margin_bottom = 268.0
+color = Color( 0.172549, 0.160784, 0.160784, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedM" type="ColorRect" parent="TableModes"]
+margin_left = 13.0
+margin_top = 9.99902
+margin_right = 304.0
+margin_bottom = 83.999
+color = Color( 0.764706, 0.129412, 0.129412, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelM" type="Label" parent="TableModes"]
+margin_left = 33.0
+margin_top = 20.999
+margin_right = 284.0
+margin_bottom = 71.999
+custom_fonts/font = SubResource( 2 )
+text = "GAME MODES"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mode1" type="Button" parent="TableModes"]
+margin_left = 20.512
+margin_top = 100.0
+margin_right = 294.512
+margin_bottom = 130.979
+custom_fonts/font = SubResource( 3 )
+text = "ONE REACTION"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mode2" type="Button" parent="TableModes"]
+margin_left = 22.512
+margin_top = 157.0
+margin_right = 294.512
+margin_bottom = 175.979
+custom_fonts/font = SubResource( 3 )
+text = "CHAIN"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mode3" type="Button" parent="TableModes"]
+margin_left = 20.512
+margin_top = 213.0
+margin_right = 294.512
+margin_bottom = 221.979
+custom_fonts/font = SubResource( 3 )
+text = "CONSTANCY"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TableHigscores" type="ColorRect" parent="."]
+margin_left = 80.0
+margin_top = 290.0
+margin_right = 396.0
+margin_bottom = 569.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreyH" type="ColorRect" parent="TableHigscores"]
+margin_left = 13.0
+margin_top = 10.0
+margin_right = 304.0
+margin_bottom = 268.0
+color = Color( 0.172549, 0.160784, 0.160784, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedH" type="ColorRect" parent="TableHigscores"]
+margin_left = 13.0
+margin_top = 10.0
+margin_right = 304.0
+margin_bottom = 84.0
+color = Color( 0.764706, 0.129412, 0.129412, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelH" type="Label" parent="TableHigscores"]
+margin_left = 38.0
+margin_top = 21.0
+margin_right = 279.0
+margin_bottom = 72.0
+custom_fonts/font = SubResource( 2 )
+text = "HIGHSCORES"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Time" type="ColorRect" parent="."]
+margin_left = 380.0
+margin_top = 155.874
+margin_right = 624.0
+margin_bottom = 249.874
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreyT" type="ColorRect" parent="Time"]
+margin_left = 6.0
+margin_top = 5.063
+margin_right = 237.0
+margin_bottom = 88.063
+color = Color( 0.172549, 0.160784, 0.160784, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BlackT" type="ColorRect" parent="Time"]
+margin_left = 20.0
+margin_top = 14.063
+margin_right = 223.0
+margin_bottom = 78.063
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SegundosLabel" type="Label" parent="Time"]
+margin_left = 15.0
+margin_top = 5.0
+margin_right = 108.0
+margin_bottom = 84.0
+custom_fonts/font = SubResource( 5 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DecimasLabel" type="Label" parent="Time"]
+margin_left = 117.0
+margin_top = 5.0
+margin_right = 148.0
+margin_bottom = 84.0
+custom_fonts/font = SubResource( 5 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CentesimasLabel" type="Label" parent="Time"]
+margin_left = 146.0
+margin_top = 5.0
+margin_right = 178.0
+margin_bottom = 84.0
+custom_fonts/font = SubResource( 5 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DosPuntosLabel" type="Label" parent="Time"]
+margin_left = 105.0
+margin_top = 5.0
+margin_right = 121.0
+margin_bottom = 84.0
+custom_fonts/font = SubResource( 5 )
+text = ":"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimerSegundos" type="Timer" parent="Time"]
+
+[node name="TimerDecimas" type="Timer" parent="Time"]
+wait_time = 0.1
+
+[node name="TimerCentesimas" type="Timer" parent="Time"]
+wait_time = 0.01
+
+[connection signal="pressed" from="TableModes/Mode1" to="." method="_on_Mode1_pressed"]
+[connection signal="pressed" from="TableModes/Mode2" to="." method="_on_Mode2_pressed"]
+[connection signal="pressed" from="TableModes/Mode3" to="." method="_on_Mode3_pressed"]
+[connection signal="timeout" from="Time/TimerSegundos" to="." method="_on_TimerSegundos_timeout"]
+[connection signal="timeout" from="Time/TimerDecimas" to="." method="_on_TimerDecimas_timeout"]
+[connection signal="timeout" from="Time/TimerCentesimas" to="." method="_on_TimerCentesimas_timeout"]
